@@ -21,6 +21,6 @@ if __name__ == '__main__':
     print('Sending training data...')
     response = post_train(host=args[1])
     if response.ok:
-        print('...✅ OK:', response.json())
+        print(' ...✅ OK:', response.json())
     else:
-        print('... ❌ failed:', response.content)
+        print(' ...❌ failed:', response.content)
