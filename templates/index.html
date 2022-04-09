@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{{ url_for('static', path='/base.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <h1>Should you play golf?</h1>
+    <div>
+        A demo MLOps project that uses a decision tree classifier to decide if you should play golf.
+    </div>
+    <div>
+        Made by: github.com/pugad
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div>
+        Available APIs:
+    </div>
+    <div>
+        <ul>
+            <div class="section">
+                <li> <b>Train the model</b>
+                    <ul>
+                        <li> Method: POST /train
+                        <li> Payload: JSON array
+                        <ul>
+                            <li class="varname"> outlook (string):
+                                <div class="desc">
+                                    "sunny" or "overcast" or "rainy"
+                                </div>
+                            <li class="varname"> temperature (int; deg Celsius):
+                            <div class="desc">
+                                e.g. 30
+                            </div>    
+                            <li class="varname"> humidity (float):
+                                <div class="desc">
+                                    e.g. 0.10
+                                </div>
+                            <li class="varname"> windy (bool):
+                            <div class="desc">
+                                true or false
+                            </div>
+                            <li class="varname"> play (string):
+                            <div class="desc">
+                                "yes" or "no"
+                            </div>    
+                        </ul>
+                        <li> Example:
+                            <div>
+                                <code class="varname">
+                                    [{"outlook": "sunny", "temperature": 26, "humidity": 0.186, "windy": true, "play": "yes"}, ...]
+                                </code>
+                            </div>
+                    </ul>    
+            </div>
+            <div class="section">
+                <li> <b>Request a prediction (should you play golf, given the submitted inputs?)</b>
+                    <ul>
+                        <li> Method: POST /predict
+                        <li> Payload: JSON
+                        <ul>
+                            <li class="varname"> outlook (string):
+                                <div class="desc">
+                                    "sunny" or "overcast" or "rainy"
+                                </div>
+                            <li class="varname"> temperature (int; deg Celsius):
+                            <div class="desc">
+                                e.g. 30
+                            </div>    
+                            <li class="varname"> humidity (float):
+                                <div class="desc">
+                                    e.g. 0.10
+                                </div>
+                            <li class="varname"> windy (bool):
+                            <div class="desc">
+                                true or false
+                            </div>
+                        </ul>
+                        <li> Example:
+                            <div>
+                                <code class="varname">
+                                    {"outlook": "sunny", "temperature": 20, "humidity": 0.6, "windy": false}
+                                </code>
+                            </div>
+                    </ul>    
+            </div>
+            <div class="section">
+            <li> <b>Health check</b>
+                <ul>
+                    <li>
+                        Method:  GET /healthz
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>

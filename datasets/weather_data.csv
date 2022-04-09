@@ -1,0 +1,11 @@
+outlook,temperature,humidity,windy,play
+sunny,33,0.403,false,no
+sunny,30,0.631,true,no
+overcast,28,0.353,false,yes
+rainy,10,0.863,false,yes
+rainy,16,0.724,false,yes
+rainy,12,0.227,true,no
+overcast,17,0.27,true,yes
+sunny,24,0.807,false,no
+sunny,14,0.154,false,yes
+rainy,22,0.251,false,yes

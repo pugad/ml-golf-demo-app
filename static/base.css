@@ -1,0 +1,29 @@
+body {
+    margin: 2em;
+    background-color: #3A3845;
+    font-family: "Roboto Slab", sans-serif;
+    color: #EEEEEE;
+}
+
+h1 {
+    color: #F7CCAC;
+}
+
+b {
+    color: #92BA92;
+}
+
+.section {
+    display: flex;
+    margin: 1em;
+    color: #EEEEEE;
+}
+
+.desc {
+    margin-left: 1em;
+    color: #78938A;
+}
+
+.varname {
+    color: #92BA92;
+}

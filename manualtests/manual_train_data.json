@@ -1,0 +1,1 @@
+[{"outlook": "sunny", "temperature": 26, "humidity": 0.186, "windy": true, "play": "yes"}, {"outlook": "overcast", "temperature": 21, "humidity": 0.583, "windy": true, "play": "yes"}, {"outlook": "overcast", "temperature": 16, "humidity": 0.472, "windy": false, "play": "yes"}, {"outlook": "rainy", "temperature": 22, "humidity": 0.393, "windy": true, "play": "no"}]
