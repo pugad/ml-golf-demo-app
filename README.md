@@ -2,7 +2,7 @@
 A demo MLOps project where a decision tree classifier is used to decide if you should play golf.
 You can interact with the API manually (see below), or you could create another web scraper/data collection app that will validate the data before sending it to ```/train```.
 
-The code can be repurposed for other ML projects. If you want to understand how it works, you can start with ```app.py```.
+The code can be repurposed for other ML projects (see LICENSE). If you want to understand how it works, you can start with ```app.py```.
 
 ## Try it out
 
